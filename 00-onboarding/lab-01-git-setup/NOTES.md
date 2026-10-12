@@ -1,11 +1,11 @@
 # 00-onboarding — lab-01-git-setup
 
 ## Môi trường
-- **OS:** Ubuntu 26.04 LTS [cite: 3]
-- **Git version:** `git version 2.53.0`[cite: 3]
-- **OpenSSH:** `OpenSSH_10.2p1 Ubuntu-2ubuntu3.6`[cite: 3]
+- **OS:** Ubuntu 26.04 LTS 
+- **Git version:** `git version 2.53.0`
+- **OpenSSH:** `OpenSSH_10.2p1 Ubuntu-2ubuntu3.6`
 
-## Các bước thực hiện[cite: 3]
+## Các bước thực hiện
 
 1. **Tạo SSH key Ed25519 có passphrase và add vào GitHub**
    - *Lệnh:*
@@ -92,21 +92,23 @@
      1
      ```
 
-6. **Tạo repo `devops-training`, branch và mở Pull Request**[cite: 2]
+6. **Tạo repo `devops-training`, branch và mở Pull Request**
    - *Lệnh:*
      ```bash
      cd ~/devops-training
-     git checkout -b feature/lab01 develop
+     git switch -c feature/lab01
      git add 00-onboarding/lab-01-git-setup/
      git commit -m "#1 00-onboarding lab-01: git setup and identity workflow"
-     git push 
+     git push -u origin feature/lab01
      ```
    - *Output chính:*
      ```text
-     
+    To github.com:<github-username>/devops-training.git
+    * [new branch]      feature/lab01 -> feature/lab01
+    branch 'feature/lab01' set up to track 'origin/feature/lab01'.
      ```
 
-## Kết quả và tiêu chí xác minh[cite: 3]
+## Kết quả và tiêu chí xác minh
 
 ### Tiêu chí 1: Kết nối SSH GitHub thành công
 
